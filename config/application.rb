@@ -7,16 +7,6 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
-
-
-class Auth
-  def self.issue
-  end
-
-  def self.decode
-  end
-end
-
 require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
