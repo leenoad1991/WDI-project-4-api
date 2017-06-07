@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170606091541) do
+ActiveRecord::Schema.define(version: 20170606161242) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,14 +33,6 @@ ActiveRecord::Schema.define(version: 20170606091541) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.bigint "user_id"
-    t.text "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_posts_on_user_id"
-  end
-
   create_table "target_muscles", force: :cascade do |t|
     t.string "name"
     t.text "image"
@@ -48,7 +40,9 @@ ActiveRecord::Schema.define(version: 20170606091541) do
     t.bigint "muscle_group_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "video_id"
     t.index ["muscle_group_id"], name: "index_target_muscles_on_muscle_group_id"
+    t.index ["video_id"], name: "index_target_muscles_on_video_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -72,6 +66,6 @@ ActiveRecord::Schema.define(version: 20170606091541) do
 
   add_foreign_key "comments", "users"
   add_foreign_key "comments", "videos"
-  add_foreign_key "posts", "users"
   add_foreign_key "target_muscles", "muscle_groups"
+  add_foreign_key "target_muscles", "videos"
 end
