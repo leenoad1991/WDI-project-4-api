@@ -141,9 +141,3 @@ MuscleGroup.create!([
     Video.create!(title: "", url: "https://youtu.be/_pnL6R6uh54", description: "", target_muscle_id: 12)
     Video.create!(title: "", url: "https://youtu.be/_pnL6R6uh54", description: "", target_muscle_id: 13)
     Video.create!(title: "", url: "https://youtu.be/_pnL6R6uh54", description: "", target_muscle_id: 14)
-
-  # Comment.create!([
-  #   {
-  #     body: "Comments..."
-  #   }
-  # ])
