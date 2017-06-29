@@ -1,24 +1,12 @@
-# README
+# wdi-project-4
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The requirement of my final project was to build an Angular app with a Ruby on Rails back-end with at least two models. I decided to build a Gym app because training is a passion of mine and I intend to make an extension of the project as my first post-GA side project. I'll be building a platform that enables a personal trainer to manage their client base, this will be built with a friend from the course in AngularJS.
 
-Things you may want to cover:
+The biggest win was learning, and becoming relatively comfortable with, Photoshop and Ruby on Rails. Design really isn’t my forte but I enjoy it and full appreciate its importance. Photoshop is widely used so it was something that I was eager to delve deeper in to.  Ruby on Rails I found similar to JavaScript and enjoyed using mainly because I think it bolstered my JavaScript knowledge.
 
-* Ruby version
+# Obstacles:
+I spent my first day planning extensively using Trello. I consider planning and time management to be one of my strong points so didn't face any problems with this. The first obstacle that I had to overcome was prioritising the many features I wanted to implement, factoring in the amount of time they'd probably take and my ability to implement them. The main feature of my site was the interactive picture of Arnie, where a user could click on the muscle they were looking to find exercises for. This posed two problems, the first was that I had to learn to use photoshop and then do a decent job of cutting out  a front and back picture of Schwarzenegger. The second was figuring out how to make Arnie interactive and responsive. My first idea was to cut out the various muscle groups and apply a different colour to them, then place them on top of where the muscle would be and apply a click/hover class to them (add pic). I opted instead to simply add divs with relative page positioning that were that same size as the different body parts. For this task I allowed myself one day.  The biggest obstacle through the project was planing my relationship modelling and getting my head around the various relationships. The was tricky and useful. Tricky because it’s not something I’d seen before but very useful because it requires a large degree of foresight of how you’ll navigate the final product.  
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# If I had more time:
+The list of features I'd like to implement is pretty extensive. I think the first thing I'd do is take the time to give Arnie the photoshop treatment mentioned above. Secondly, I'd allow users to have more input rather than merely being able to comment on the videos. I would like to have more videos, a rating and sorting function. Thirdly, I'd like to have pulled in an API that I could use on top of Google Maps to find local Gyms. I decided against doing this because the ultimate aim of the project was to showcase new skills and I'd done external API’s in previous projects. A feature that would take significantly more time but would be very valuable to a user would be to offer nutritional advice based on their fitness goals. For example, suggest various meals and their nutritional content for someone whose goal is to lose 10kg before a wedding in 12 months’ time.

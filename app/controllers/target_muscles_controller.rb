@@ -10,7 +10,7 @@ class TargetMusclesController < ApplicationController
 
   # GET /target_muscles/1
   def show
-    render json: @target_muscle
+    render json: @target_muscle, include: ['videos.comments', 'videos.comments.user']
   end
 
   # POST /target_muscles

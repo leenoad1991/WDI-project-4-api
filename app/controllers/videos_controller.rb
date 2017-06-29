@@ -10,7 +10,7 @@ class VideosController < ApplicationController
 
   # GET /videos/1
   def show
-    render json: @video
+    render json: @video, include: ['comments.user']
   end
 
   # POST /videos
